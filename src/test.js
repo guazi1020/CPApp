@@ -1,6 +1,9 @@
 import React from 'react'
-
+import { message, Button } from 'antd'
 class RequestStu extends React.Component {
+    handleClick() {
+        message.info("hello")
+    }
     constructor(props) {
         super(props)
         this.state = {
@@ -25,7 +28,7 @@ class RequestStu extends React.Component {
                 }, function () {
                     console.log(this.state.datas)
                     let com = this.state.datas.map((item, index) => {
-                        console.log(item.game)
+                        //console.log(item.game)
                         return <li key={index}>{item.game}</li>
                     })
                     this.setState({
@@ -37,8 +40,14 @@ class RequestStu extends React.Component {
             .catch(e => { console.log("err") })
 
     }
+
     render() {
-        return <div>{this.state.arr}</div>
+        return (<div> <Button onClick={this.handleClick(this)} type="primary">Primary</Button>
+
+        </div>
+        )
     }
+
+
 }
 export default RequestStu
