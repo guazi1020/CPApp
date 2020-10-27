@@ -6,7 +6,7 @@ class showData extends React.Component {
         return (
             <div className="gutter-example">
                 <Row>
-                    <Col className="gutter-row" span={12}>12</Col>
+                    <Col className="gutter-row" span={12}>112</Col>
                 </Row>
                 <Row>
                     <Col className="gutter-row" span={13}>13</Col>

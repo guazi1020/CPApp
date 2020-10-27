@@ -2,10 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'antd/dist/antd.css'
-import App from './Equation/showData';
+//import App from './Equation/showData';
+import App from './comtest';
+import APP2 from './Navi/Navi'
 import * as serviceWorker from './serviceWorker';
 
 let app=<App/>
+let app2=<APP2/>
 let root=document.getElementById('root')
 
 
